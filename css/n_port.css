@@ -1,0 +1,332 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+  font-size: 2em;
+  position: relative;
+}
+.first-page {
+  background: url(../images/first_page_background.png);
+}
+.first-page .first_txt {
+  margin-top: 270px;
+  position: absolute;
+  width: 70%;
+  text-align: center;
+}
+.first-txt h1 {
+  font-size: 250px;
+}
+.first-page .top-text {
+  position: absolute;
+  top: 40px;
+  margin: 20px;
+  font-size: 24px;
+  color: ivory;
+  font-family: "italiana", sans-serif;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-page .top-text.left {
+  left: 0;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.first-page .top-text.right {
+  right: 0;
+  padding-right: 40px;
+  text-align: right;
+}
+.backgroundbigs1,
+.backgroundbigs2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotate 10s linear infinite;
+  align-items: center;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.backgroundbigs1 {
+  background-image: url(../images/Vector10.png);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.backgroundbigs2 {
+  background-image: url(../images/Vector11.png);
+  animation: rotate 15s linear infinite;
+}
+/*first page h1: 보림 포트폴리오 이름*/
+.first-page h1 {
+  font-family: "Italiana", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: ivory;
+  margin-bottom: 0;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* 수평 중앙 정렬 */
+  transition: transform 0.3s ease; /* 부드러운 애니메이션 추가 */
+}
+/*이름 두줄로 나눈거*/
+.first-page h1 span {
+  display: block;
+}
+/*2번째 페이지*/
+.second-page {
+  z-index: 1000;
+
+  background: url(../images/page_background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*twobox:아이보리 박스*/
+.second-page .twobox {
+  width: 85%;
+  height: 88%;
+  background-color: ivory;
+  border-radius: 30px 30px;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.second-page .inner_box {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.second-page .inner_box .left {
+  width: 30%;
+  flex-direction: column;
+}
+.second-page .inner_box .profile {
+  width: 80%;
+}
+.second-page .inner_box .profile img {
+  width: 221px;
+  height: 221px;
+  margin: 0 auto;
+  margin-left: 50px;
+  top: 200px;
+}
+.imgwrap img:first-child {
+  position: absolute;
+  scale: 1.4;
+}
+.imgwrap img:last-child {
+  position: absolute;
+  scale: 1.3;
+}
+.second-page .inner_box .profile ul {
+  margin: 0 auto;
+  position: relative;
+  top: 125px;
+  right: 30px;
+}
+.second-page .inner_box .left .profile ul li {
+  font-size: 15px;
+  color: #222;
+  text-align: center;
+  margin: 5px 0;
+}
+.license {
+  margin: 25px 10px;
+  position: relative;
+  top: 130px;
+}
+.li_name {
+  font-size: 35px;
+  font-weight: bold;
+  color: #c44436;
+  margin-top: 25px;
+}
+.li_con {
+  font-size: 18px;
+  color: #222;
+  margin: 10px 0;
+}
+.second-page .inner_box .second-page .inner_box .right {
+  width: 70%;
+  float: right;
+}
+li.namebox {
+  font-size: 60px;
+  color: #c44436;
+  font-weight: 600;
+  line-height: 70px;
+}
+li.nameintro {
+  font-size: 20px;
+  color: #ffce4f;
+}
+ul.skill {
+}
+.second-page .inner_box .skill li ul {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 40px;
+}
+.second-page .inner_box .skill ul li img {
+  width: 45px;
+}
+
+/*5번째 페이지*/
+.five-page {
+  background: url(../images/page_background.png) no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.six-page {
+  background: url(../images/page_background.png) no-repeat center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.five-page .txt {
+  top: 40px;
+  left: 90px;
+  color: ivory;
+  font-family: "italiana", sans-serif;
+  position: absolute;
+  z-index: 1;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  font-size: 90px;
+}
+.txt h2 {
+  font-size: 100px;
+  margin-left: 160px;
+}
+.five-page .back_design {
+  width: 1000px;
+  height: 700px;
+  background: url(../images/mockup_png/ipad_1_treeshadow_main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: top 050px;
+  border-radius: 50px;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.back_design:hover {
+  background: url(../images/mockup_png/ipad_1_treeshadow_beforeyoajung.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.back_right {
+  position: relative;
+  left: 800px;
+  top: 270px;
+}
+.explain {
+  right: 170px;
+  position: absolute;
+  bottom: 100px;
+  color: ivory;
+}
+.explain h3 {
+  font-size: 50px;
+  border-bottom: 2px solid ivory;
+  width: 80%;
+  margin-bottom: 30px;
+}
+li.bold_txt {
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 10px;
+}
+li.exp_nomal {
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.7;
+}
+.explain ul:nth-child(3) ul {
+  display: flex;
+}
+.explain img {
+  width: 30px;
+  margin: 0 10px;
+}
+.six-page .txt {
+  top: 400px;
+  left: 500px;
+  color: ivory;
+  font-family: "italiana", sans-serif;
+  position: absolute;
+  z-index: 1;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  font-size: 60px;
+}
+.six-page .back_design {
+  width: 1000px;
+  height: 700px;
+  background: url(../images/mockup_png/ipad_1_treetable_pomain_op.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: top 050px;
+  border-radius: 50px;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.seven-page {
+  background: url(../images/page_background.png) no-repeat center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.seven-page .txt {
+  align-items: center;
+  top: 100px;
+  color: ivory;
+  font-family: "italiana", sans-serif;
+  position: absolute;
+  z-index: 1;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  font-size: 60px;
+  display: flex;
+}
